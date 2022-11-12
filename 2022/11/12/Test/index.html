@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myblog || 关于我</title>
+    <title>Myblog || Test</title>
     <meta name="author" content="Xiaohui">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
@@ -169,7 +169,7 @@
 <link rel="stylesheet" href="/css/post-body.css">
 <div class="article">
     <div>
-        <h1>关于我 </h1>
+        <h1>Test </h1>
     </div>
     <div class="info">
         <span class="date">
@@ -180,12 +180,44 @@
         </span>
 
         
+        <span class="category">
+            <a href="/categories/Diary">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                Diary
+            </a>
+        </span>
+        
 
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/PS3" style=color:#03a9f4>
+                    PS3
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Games" style=color:#00a596>
+                    Games
+                </a>
+            </span>
+            
+        </span>
         
     </div>
 
     <div class="content" v-pre>
-        
+        <p>Test File！</p>
+
     </div>
 
     
@@ -258,6 +290,21 @@
             }
         }
     })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'en',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
 </script>
 
 </body>

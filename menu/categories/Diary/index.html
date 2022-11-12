@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myblog || 关于我</title>
+    <title>Myblog || Diary</title>
     <meta name="author" content="Xiaohui">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
@@ -166,35 +166,75 @@
 
                 <div id="main">
                      
-<link rel="stylesheet" href="/css/post-body.css">
-<div class="article">
-    <div>
-        <h1>关于我 </h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2022/11/12
+<div class="categories-tags">
+    
+    <div class="all-s">
+        
+        
+        <span>
+            <a href="/menu/categories/Diary/" style='background:linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)'>
+                <span class="icon">
+                    <a-icon type="book" theme="filled" /></span>
+                Diary
+            </a>
         </span>
-
         
-
         
     </div>
+    <div id="archives">
+        
+        <a-timeline>
+            <a-timeline-item timestamp="2022/11/12" placement="top" color="#a5c2f5">
+                <a-card hoverable>
+                    <div class="item-time">2022/11/12</div>
+                    <a href="/2022/11/12/Test/">
+                        <h3>Test</h3>
+                    </a>
+                    <div class="info">
+                        
+                        <span class="category">
+                            <a href="/categories/Diary">
+                                <span class="icon">
+                                    <a-icon type="book" theme="filled" />
+                                </span>
+                                Diary
+                            </a>
+                        </span>
+                        
 
-    <div class="content" v-pre>
+                        
+                        <span class="tags">
+                            <span class="icon">
+                                <a-icon type="tags" />
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/PS3" style=color:#ff7d73>
+                                    PS3
+                                </a>
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/Games" style=color:#ff7d73>
+                                    Games
+                                </a>
+                            </span>
+                            
+                        </span>
+                        
+                    </div>
+                </a-card>
+            </a-timeline-item>
+        </a-timeline>
         
     </div>
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-    <div id="comment">
-        <div id="gitalk-container">
-        </div>
-    </div>
-    
+    <script>
+        new Vue({
+            el: '#archives'
+        })
+    </script>
 </div>
                      
 <footer id="footer">
